@@ -67,15 +67,13 @@ button:hover{
 }
 button:active{
     transform:translate(0, 0.3rem);
-    box-shadow 0 0.1rem;
+    box-shadow:0 0.1rem;
 }
 /*Table or Smaller */
 @media screen and (max-width:1000px){
 .quote-container{
     margin:auto 10px;
 }
-
 .quote-text{
     font-size:1.76rem;
 }
-
