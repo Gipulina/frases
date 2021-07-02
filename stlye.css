@@ -17,3 +17,65 @@ body{
     align-items: center;
     justify-content: center;
 }
+.quote-container{
+    width:auto;
+    max-width: 800px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.2);
+}
+
+.quote-text{
+    font-size: 1.76rem;
+}
+.long-quote{
+    font-size:2rem;
+}
+
+.fa-quote-left{
+    font-size: 4rem;
+}
+
+.quote-author{
+    margin-top:30px;
+    font-size:2rem;
+    font-style:italic;
+}
+.button-container{
+    margin-top:15px;
+    display:flex;
+    justify-content: space-between;
+}
+button{
+    cursor:pointer;
+    font-size: 1.2rem;
+    height: 50px;
+    padding:10px;
+    /* background-color:#93BAC1; */
+    color:#93BAC1;
+    border-color: rgb(255, 254, 193,0.5);
+    background-color: rgba(255, 255, 255, 0.7);
+    /* border-color: hsla(69, 86%, 81%, 0.6); */
+    border-width: 2px;
+    border-radius: 10px;
+}
+button:hover{
+    /* background-color:#ffd6cd; */
+    /* color:rgba(255, 255, 255, 0.7); */
+    filter:brightness(90%);  
+}
+button:active{
+    transform:translate(0, 0.3rem);
+    box-shadow 0 0.1rem;
+}
+/*Table or Smaller */
+@media screen and (max-width:1000px){
+.quote-container{
+    margin:auto 10px;
+}
+
+.quote-text{
+    font-size:1.76rem;
+}
+
