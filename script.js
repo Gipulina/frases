@@ -46,7 +46,7 @@ async function getQuotes() {
 }
 //to tweet a quote
  function tweetQuote(){
-     const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
+     const twitterUrl = `https://twitter.com/intent/tweet?text="${quoteText.textContent}" frase de ${authorText.textContent}. Para más frases inspiradoras click aquí https://gipulina.github.io/frases/`;
      window.open(twitterUrl, '_blank');
  }
 
