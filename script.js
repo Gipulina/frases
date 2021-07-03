@@ -28,8 +28,6 @@ function newQuote() {
     }else{
         quoteText.classList.remove('long-quote');
   }
-
-  
   quoteText.textContent = quote.text;
 }
 
@@ -46,6 +44,14 @@ async function getQuotes() {
         // alert("Something worked wrong");
     }
 }
+//to tweet a quote
+ function tweetQuote(){
+     const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
+     window.open(twitterUrl, '_blank');
+ }
 
+ //Event Listeners
+newQuoteBtn.addEventListener('click', newQuote);
+twitterBtn.addEventListener('click', tweetQuote);
 // On Load
 getQuotes();
